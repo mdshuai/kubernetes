@@ -87,13 +87,13 @@ func familiarizeName(named namedRepository) repository {
 		path:   named.Path(),
 	}
 
-	if repo.domain == defaultDomain {
-		repo.domain = ""
-		// Handle official repositories which have the pattern "library/<official repo name>"
-		if split := strings.Split(repo.path, "/"); len(split) == 2 && split[0] == officialRepoName {
-			repo.path = split[1]
-		}
-	}
+//	if repo.domain == defaultDomain {
+//		repo.domain = ""
+//		// Handle official repositories which have the pattern "library/<official repo name>"
+//		if split := strings.Split(repo.path, "/"); len(split) == 2 && split[0] == officialRepoName {
+//			repo.path = split[1]
+//		}
+//	}
 	return repo
 }
 
